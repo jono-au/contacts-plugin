@@ -24,6 +24,7 @@ $formData = $wpdb->get_results($SQL);
             <th>Phone</th>
             <th>Email</th>
             <th>Website</th>
+            <th>Edit</th>
         </tr>
 
 
@@ -47,10 +48,9 @@ $formData = $wpdb->get_results($SQL);
                     <td><?php echo $website; ?></td>
                     <td>
                         <div class="btn-group" role="group">
-                                <button type="sybmit" class="btn btn-primary">
-                                    <span class="label label-primary glyphicon glyphicon-pencil"></span>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="label label-primary glyphicon glyphicon-pencil" />
                                 </button>
-                            </a>
                         </div>
                     </td>
                 </form>
