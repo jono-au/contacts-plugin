@@ -82,6 +82,16 @@ function init_db_contactlist(){
 
 }
 
+    //settings link
+    add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'contactlist_settings_link');
+        
+    function contactlist_settings_link( $links ) {
+        $links[] = '<a href="' .
+            admin_url( 'admin.php?page=contactlist_list' ) .
+            '">' . __('Settings') . '</a>';
+        return $links;
+}
+
 
 
 ?>
